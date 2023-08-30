@@ -21,11 +21,105 @@
 
   <meta name="theme-color" content="#fafafa">
 </head>
+<style>
+  achievments {
+  }
 
-<body>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Arial";
+  }
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  img {
+    border: solid;
+    border-width: 1px;
+    flex: 5;
+    text-align: center;
+    padding: 0 0;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  left-panel {
+    background-color: darkslategray;
+    color: white;
+    padding: 5% 7% 5% 5%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  picture-box-column {
+    border: dashed;
+    border-width: 1px;
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+
+  picture-box-row {
+    border: dashed;
+    border-width: 1px;
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+
+  right-panel {
+    flex: 3;
+    padding: 5% 5% 7% 5%;
+  }
+
+  skills {
+    flex: 4;
+  }
+
+  thing {
+    flex: 1;
+  }
+
+</style>
+
+<body style="display: flex;">
+  <left-panel>
+    <picture-box-row>
+      <thing></thing>
+      <picture-box-column>
+      <thing></thing>
+      <img src="img/daniel.jpeg" alt="DPP">
+      <thing></thing>
+      </picture-box-column>
+      <thing></thing>
+    </picture-box-row>
+    <skills>
+      <tools>tools</tools>
+      <tools>operating systems</tools>
+    </skills>
+
+  </left-panel>
+  <right-panel>Right Panel
+  </right-panel>
+
+  <script>
+    // window.addEventListener("load", setSquareHeight);
+    // window.addEventListener("resize", setSquareHeight);
+    //
+    // function setSquareHeight() {
+    //   const pictureBox = document.getElementsByTagName("picture-box")[0];
+    //   const width = window.getComputedStyle(pictureBox).width;
+    //   pictureBox.style.height = width;
+    //   console.log(`width === ${width}, height === ${pictureBox.style.height}`);
+    // }
+</script>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
