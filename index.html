@@ -34,14 +34,17 @@
     font-size: 2.3vmin;
   }
 
-
+  hbr {
+    padding: 0.5vmin;
+    display: block;
+  }
 
   html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: "Arial";
+    font-family: "DejaVu Sans";
   }
 
   img {
@@ -116,9 +119,10 @@
     justify-content: flex-start;
   }
 
-  #skills-heading {
+  skills-heading {
     border-bottom: solid;
     width: 100%;
+    font-size: 2.7vmin;
   }
 
   flex-spacer-1 {
@@ -146,11 +150,13 @@
       </picture-box-column>
       <flex-spacer-1></flex-spacer-1>
     </picture-box-row>
+    <br>
     <skills>
-      <h2 id="skills-heading">SKILLS</h2>
+      <skills-heading>SKILLS</skills-heading>
+      <br>
       <languages>
         <languages-heading>Languages</languages-heading>
-        <div>Java &nbsp;&centerdot;&nbsp; Javascript &nbsp;&centerdot;&nbsp; C &nbsp;&centerdot;&nbsp; C++ &nbsp;&centerdot;&nbsp; D &nbsp;&centerdot;&nbsp; Python&nbsp;&centerdot;&nbsp; GAS</div>
+        <div>Java (JDK 20)&nbsp;&centerdot;&nbsp; Javascript (ES6) &nbsp;&centerdot;&nbsp; C-99 &nbsp;&centerdot;&nbsp; C++-17 &nbsp;&centerdot;&nbsp; D-104 &nbsp;&centerdot;&nbsp; Python 3&nbsp;&centerdot;&nbsp; GAS</div>
       </languages>
       <br>
       <frameworks>
@@ -160,12 +166,12 @@
       <br>
       <operating-systems>
         <operating-systems-heading>Operating Systems</operating-systems-heading>
-        <div></div>
+        <div style="padding-top: 0.5vmax;">Linux &nbsp;&centerdot;&nbsp; FreeBSD &nbsp;&centerdot;&nbsp; Various RTOS &nbsp;&centerdot;&nbsp; Windows</div>
       </operating-systems>
       <br>
       <tools>
         <tools-heading>Tools</tools-heading>
-        <div></div>
+        <div style="padding-top: 0.5vmax;">GraalVM &nbsp;&centerdot;&nbsp; GCC  &nbsp;&centerdot;&nbsp; </div>
       </tools>
     </skills>
 
