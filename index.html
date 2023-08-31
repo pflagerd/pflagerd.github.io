@@ -44,6 +44,15 @@
     height: 100%;
   }
 
+  languages {
+    /*flex: 1;*/
+  }
+
+  languages-heading {
+    font-size: 2.3vmin;
+    /*flex: 1;*/
+  }
+
   left-panel {
     background-color: darkslategray;
     color: white;
@@ -54,9 +63,18 @@
     justify-content: space-evenly;
   }
 
+  operating-systems {
+    /*flex: 1;*/
+  }
+
+  operating-systems-heading {
+    /*flex: 1;*/
+    font-size: 2.3vmin;
+  }
+
   picture-box-column {
-    border: dashed;
-    border-width: 1px;
+    /*border: dashed;*/
+    /*border-width: 1px;*/
     flex: 5;
     display: flex;
     flex-direction: column;
@@ -65,8 +83,8 @@
   }
 
   picture-box-row {
-    border: dashed;
-    border-width: 1px;
+    /*border: dashed;*/
+    /*border-width: 1px;*/
     flex: 1;
     display: flex;
     justify-content: space-evenly;
@@ -80,10 +98,28 @@
 
   skills {
     flex: 4;
+    /*border: dashed;*/
+    /*border-width: 1px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
-  thing {
+  #skills-heading {
+    border-bottom: solid;
+    width: 100%;
+  }
+
+  flex-spacer-1 {
     flex: 1;
+  }
+
+  tools {
+    /*flex: 1;*/
+  }
+
+  tools-heading {
+    font-size: 2.3vmin;
   }
 
 </style>
@@ -91,17 +127,30 @@
 <body style="display: flex;">
   <left-panel>
     <picture-box-row>
-      <thing></thing>
+      <flex-spacer-1></flex-spacer-1>
       <picture-box-column>
-      <thing></thing>
+      <flex-spacer-1></flex-spacer-1>
       <img src="img/daniel.jpeg" alt="DPP">
-      <thing></thing>
+      <flex-spacer-1></flex-spacer-1>
       </picture-box-column>
-      <thing></thing>
+      <flex-spacer-1></flex-spacer-1>
     </picture-box-row>
     <skills>
-      <tools>tools</tools>
-      <tools>operating systems</tools>
+      <h2 id="skills-heading">SKILLS</h2>
+      <languages>
+        <languages-heading>Languages</languages-heading>
+        <div>Java &nbsp;&centerdot;&nbsp; Javascript &nbsp;&centerdot;&nbsp; C &nbsp;&centerdot;&nbsp; C++ &nbsp;&centerdot;&nbsp; D &nbsp;&centerdot;&nbsp; Python&nbsp;&centerdot;&nbsp; GAS</div>
+      </languages>
+      <br>
+      <operating-systems>
+        <operating-systems-heading>Operating Systems</operating-systems-heading>
+        <div></div>
+      </operating-systems>
+      <br>
+      <tools>
+        <tools-heading>Tools</tools-heading>
+        <div></div>
+      </tools>
     </skills>
 
   </left-panel>
