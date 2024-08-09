@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+    /* Basic reset and setting up print-friendly styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        .resume {
+            display: flex;
+            width: 100%;
+            min-height: 100%;
+        }
+
+        aside {
+            width: 2.87in; /* Fixed width for the left column */
+            padding: 20px;
+            background-color: #f2f2f2; /* Light grey background */
+        }
+
+        main {
+            flex-grow: 1; /* Takes the remaining space */
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: navy;
+        }
+
+        header p {
+            font-size: 16px;
+            color: gray;
+        }
+
+        h2 {
+            border-bottom: 2px solid black;
+            padding-bottom: 3px;
+        }
+
+        article {
+            margin-top: 10px;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: darkblue;
+        }
+
+        h4 {
+            font-size: 18px;
+            color: darkred;
+        }
+
+        .date {
+            font-style: italic;
+            color: darkgreen;
+        }
+
+        ul {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 10px;
+            font-style: italic;
+        }
+
+        @media print {
+            body {
+                width: 8.5in;
+                height: 11in;
+                margin: 0;
+                border: initial;
+                border-radius: initial;
+                width: initial;
+                min-height: initial;
+                box-shadow: initial;
+                background: initial;
+                page-break-after: always;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <aside>
+            <h2>Career Summary</h2>
+            <p>Experienced web developer with a strong background in developing award-winning applications for a diverse clientele. 5+ years of industry experience includes programming, debugging, and wireframing.</p>
+        </aside>
+        <main>
+            <header>
+                <h1>John Doe</h1>
+                <p>Web Developer | <a href="mailto:john.doe@example.com">john.doe@example.com</a> | (123) 456-7890</p>
+            </header>
+            <section class="experience">
+                <h2>Experience</h2>
+                <article>
+                    <h3>Senior Web Developer</h3>
+                    <h4>ABC Company, New York, NY</h4>
+                    <p class="date">January 2018 - Present</p>
+                    <ul>
+                        <li>Lead a team of web developers in designing interactive applications.</li>
+                        <li>Implemented modern web design technologies to enhance user experience.</li>
+                        <li>Optimized application performance, resulting in a 50% decrease in load times.</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="education">
+                <h2>Education</h2>
+                <article>
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <h4>XYZ University, Chicago, IL</h4>
+                    <p class="date">August 2013 - May 2017</p>
+                </article>
+            </section>
+            <footer>
+                <p>Thank you for considering my application.</p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
