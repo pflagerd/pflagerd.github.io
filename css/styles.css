@@ -1,8 +1,34 @@
 body {
-    margin: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300
 }
 
-article :first-child {
-    font-size: 140%;
-    font-style: italic;
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    min-height: 100vh; /* Makes main take full viewport height */
+}
+
+aside {
+    width: 30%;
+    background-color: darkslategray; /* Change this to your preferred color */
+    color: white; /* This sets the text color to white */
+    box-sizing: border-box;
+    margin: 0;
+    flex-shrink: 0; /* Prevents the aside from shrinking */
+    flex-grow: 0; /* Prevents the aside from growing */
+    padding: 1rem;
+}
+
+article {
+    width: 70%; /* Takes remaining width */
+    height: 100%;
+    padding: 1rem;
 }
