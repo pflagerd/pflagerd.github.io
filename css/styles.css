@@ -1,19 +1,9 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300
-}
-
-h1 {
-    font-weight: 600;
-}
-
-h2 {
-    font-weight: 400;
-}
-
-main {
-    display: flex;
-    min-height: 100vh; /* Makes main take full viewport height */
+article {
+    width: 70%; /* Takes remaining width */
+    height: 100%;
+    padding: 0 1rem 1rem 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 aside {
@@ -25,10 +15,69 @@ aside {
     flex-shrink: 0; /* Prevents the aside from shrinking */
     flex-grow: 0; /* Prevents the aside from growing */
     padding: 1rem;
+    padding-bottom: 0;
 }
 
-article {
-    width: 70%; /* Takes remaining width */
-    height: 100%;
-    padding: 1rem;
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300
+}
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+h2 {
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0.20rem;
+    font-weight: 400;
+}
+
+h3.degree {
+    font-weight: 300;
+}
+
+li {
+    margin-bottom: 0.3rem;
+    margin-top: 0;
+    font-size: 0.9rem;
+}
+
+main {
+    display: flex;
+    min-height: 100vh; /* Makes main take full viewport height */
+}
+
+p.company {
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: gray;
+    font-size: small;
+}
+
+
+p.role {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+section#location {
+    font-size: small;
+}
+
+h2.title {
+    margin-top: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
 }
